@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovaNexus</title>
+
+    <!-- scripts de librerias -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" href="/IMAGENES/logoFooter.png">
+
+    <!-- conexion a archivos css -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/loader.css">
+    <link rel="stylesheet" href="CSS/botonArriba.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="CSS/contacto.css">
+</head>
+
+<body>
+    <!--ANIMACION CARGA-->
+    <div id="loaderPage" class="seccion_loader">
+        <div class="loader">
+            <div class="loader_1"></div>
+            <div class="loader_2"></div>
+        </div>
+    </div>
+    <script src="JS/loader.js"></script>
+
+    <!-- MENU-->
+    <nav>
+        <img src="IMAGENES/icono1.png" alt="Logo" class="logo">
+        <div class="menu-hamburguesa" id="menuHamburguesa">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="./index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="./ods09.html">ODS09</a>
+            </li>
+
+            <li>
+                <a href="./proyecto.html">Proyecto</a>
+            </li>
+
+            <li>
+                <a href="./explora.html">Explora</a>
+            </li>
+
+            <li>
+                <a href="./contacto.html">Contacto</a>
+                <div class="dropdown">
+                    <a href="#desarrolladores">Desarrolladores</a>
+                    <a href="#formulario">Formulario</a>
+                </div>
+            </li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PORTADA-->
+    <section id="seccion1">
+        <main>
+            <div class=" container_cover">
+                <div class="cover">
+                    <div class="conten">
+                        <h1>SOBRE NOSOTROS<br><span class="texto"></span></h1>
+                        <input type="button" value="Formulario" onclick="location.href='#forms'">
+                    </div>
+
+                    <div class="png">
+                        <img src="./IMAGENES/soporte.gif" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="/JS/menu.js"></script>
+
+    <!-- Redes Sociales -->
+    <div class="social">
+        <a href="#"><i class="fab fa-twitter icon"></i></i></a>
+        <a href="https://www.facebook.com/tecnologiaVG?locale=es_LA" target="_blank"><i
+                class="fab fa-facebook-f icon"></i></a>
+        <a href="https://www.youtube.com/@vallegrande_/videos" target="_blank"><i
+                class="fa-brands fa-youtube icon"></i></a>
+        <a href="https://www.instagram.com/valle_grande_oficial/" target="_blank"><i
+                class="fa-brands fa-instagram icon"></i></a>
+    </div>
+
+    <!-- Sección de Valores -->
+    <hr>
+    <div class="desarrolladores" id="desarrolladores">
+        <h1>Nuestros valores</h1>
+    </div>
+
+    <div id="card-area">
+        <div class="wrapper">
+            <div class="box-area">
+                <div class="box">
+                    <img alt="" src="IMAGENES/vision.jpg">
+                    <div class="overlay">
+                        <h3>Visión</h3>
+                        <p>Desarrollamos tecnología que inspira y empodera a las personas, creando un futuro más
+                            brillante y equitativo para todos.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img alt="" src="IMAGENES/objetivo.jpg">
+                    <div class="overlay">
+                        <h3>Objetivo</h3>
+                        <p>Nuestro objetivo es utilizar la tecnología para crear soluciones que no solo sean
+                            innovadoras, sino que también tengan un impacto positivo en la sociedad y el medio ambiente.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img alt="" src="IMAGENES/mision.jpg">
+                    <div class="overlay">
+                        <h3>Misión</h3>
+                        <p>Nuestra misión es desarrollar soluciones tecnológicas innovadoras que transformen y mejoren
+                            la vida de las personas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Desarrolladores -->
+    <hr>
+    <div class="desarrolladores" id="desarrolladores">
+        <h1>Desarrolladores</h1>
+    </div>
+
+    <div class="cuerpo">
+        <div class="person" style="--color: #D9D9D9">
+            <div class="persona-container">
+                <div class="container-inner">
+                    <div class="circle"></div>
+                    <img src="./IMAGENES/persona.png">
+                </div>
+            </div>
+            <div class="divider">
+            </div>
+            <h1>Brenda de la O</h1>
+            <p>Administrador de costos</p>
+        </div>
+
+        <div class="person" style="--color: #de124f">
+            <div class="persona-container">
+                <div class="container-inner">
+                    <div class="circle"></div>
+                    <img src="./IMAGENES/jhoss.png">
+                </div>
+            </div>
+            <div class="divider">
+            </div>
+            <h1>Jhoss Palomino</h1>
+            <p>Gerente de marketing</p>
+        </div>
+
+        <div class="person" style="--color: #12de85">
+            <div class="persona-container">
+                <div class="container-inner">
+                    <div class="circle"></div>
+                    <img src="./IMAGENES/marco.png">
+                </div>
+            </div>
+            <div class="divider">
+            </div>
+            <h1>Marco Infante</h1>
+            <p>Administrador de proyecto</p>
+        </div>
+    </div>
+    <h1 class="separador-tarjetas"></h1>
+
+    <!-- Sección de Contacto -->
+    <hr>
+    <h1 class="texto-contacto" id="forms">Contactanos</h1>
+    <section class="contact" style="margin-top: -110px;">
+        <div class="contact-form">
+            <form id="formulario" class="form_input">
+                <input type="text" placeholder="Nombre" id="nombre" class="form_input" required pattern="[A-Za-z\s]+" title="El nombre solo debe contener letras y espacios.">
+                <span id="nombreError" class="error-message"></span>
+                <input type="text" placeholder="Apellido" id="apellido" class="form_input" required pattern="[A-Za-z\s]+" title="El apellido solo debe contener letras y espacios.">
+                <span id="apellidoError" class="error-message"></span>
+                <input type="email" id="correo" placeholder="Email" class="form_input" required>
+                <span id="correoError" class="error-message"></span>
+                <input type="text" placeholder="Número Telefónico" id="numero" class="form_input" required pattern="\d{9}" title="El número telefónico debe contener 9 dígitos.">
+                <span id="numeroError" class="error-message"></span>
+                <textarea id="motivo" cols="30" rows="10" placeholder="Comentario o Pregunta" class="form_input" required></textarea>
+                <span id="motivoError" class="error-message"></span>
+                <input type="submit" value="ENVIAR" class="btn">
+            </form>
+        </div>
+        <div class="contact-img">
+            <img src="./IMAGENES/contacto.png" alt="">
+        </div>
+    </section>
+    
+
+    <!--BOTON INICIO-->
+    <script src="./JS/botonArriba.js"></script>
+    <a href=#seccion1><img src="./IMAGENES/flechaArriba.png" alt="flecha hacia arriba" id="botonArriba"></a>
+    <script src="./JS/botonArriba.js"></script>
+    <link rel="stylesheet" href="/CSS/botonArriba.css">
+
+    <!--FOOTER-->
+    <section id="redes">
+        <footer>
+            <div class="footer">
+                <img src="IMAGENES/icono3.png" width="150px">
+                <ul class="icono">
+                    <li>
+                        <a href="#"><i class="fab fa-twitter icon"></i></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/tecnologiaVG?locale=es_LA" target="_blank"><i
+                                class="fab fa-facebook-f icon"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@vallegrande_/videos" target="_blank"><i
+                                class="fa-brands fa-youtube icon"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/valle_grande_oficial/" target="_blank"><i
+                                class="fa-brands fa-instagram icon"></i></a>
+                    </li>
+                </ul>
+                <ul class="busquedas">
+                    <li>Inicio</li>
+                    <li>|</li>
+                    <li>Explora</li>
+                    <li>|</li>
+                    <li>Contacto</li>
+                    <li>|</li>
+                    <li>Contribuir</li>
+                </ul>
+                <div class="copyright">
+                    &copy;Todos los derechos reservados
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="JS/formulario.js"></script>
+</body>
+
+</html>
